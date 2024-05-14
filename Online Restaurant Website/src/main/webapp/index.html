@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Eats - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">   
+    <style>
+        .hero-section {
+            background: url('static/img/restaurant-interior.jpg') no-repeat center center;
+            background-size: cover;
+            height: 90vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        /* Adding an overlay */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity to get the desired effect */
+            z-index: 0;
+        }
+
+        /* Ensuring content is above the overlay */
+        .hero-section h1, .hero-section p, .hero-section a {
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000; /* Adding text shadow */
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 4px #000; /* Adding text shadow */
+        }
+
+        /* Custom styles */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Delicious Eats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section ">
+        <h1 class="animate__animated animate__rollIn">Welcome to Delicious Eats!</h1>
+        <p>Experience the best dining with us.</p>
+        <a href="menu.html" class="btn btn-primary btn-lg animate__animated animate__backInUp">Explore Our Menu</a>
+    </div>
+
+    <!-- Add the rest of your HTML here -->
+    
+    <!-- Menu Preview Section -->
+    <!-- Menu Preview Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Featured Dishes</h2>
+    <div class="row mt-2 mb-2">
+       <!-- Dish 1: Pav Bhaji -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/pav-bhaji.jpg" class="card-img-top" alt="Pav Bhaji">
+        <div class="card-body">
+            <h5 class="card-title">Pav Bhaji</h5>
+            <p class="card-text">A spicy blend of vegetables in tomato gravy served with buttered pav. The quintessential Mumbai street food.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Dish 2: Misal Pav -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/misal-pav.jpg" class="card-img-top" alt="Misal Pav">
+        <div class="card-body">
+            <h5 class="card-title">Misal Pav</h5>
+            <p class="card-text">A spicy curry of mixed sprouts, topped with onions, lemon, farsan and served with pav. A flavorsome, spicy meal anytime.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Dish 3: Vada Pav -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/360_F_593251176_seDDdJxDNLvyFe80WGvctjJyCNodCuWg.jpg" class="card-img-top" alt="Vada Pav">
+        <div class="card-body">
+            <h5 class="card-title">Vada Pav</h5>
+            <p class="card-text">Mumbai's iconic street food! Spiced mashed potato fritters stuffed in bread bun, served with chutneys.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="row mt-2 mb-2">
+        <!-- Dish 4 -->
+<!-- Dish 4: Puran Poli -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/purna-poli.jpg" class="card-img-top" alt="Puran Poli">
+        <div class="card-body">
+            <h5 class="card-title">Puran Poli</h5>
+            <p class="card-text">A sweet flatbread stuffed with a sweet lentil filling made from chana dal and jaggery. A festive delight.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Dish 5: Kolhapuri Chicken -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/kolhapuri-chicke.jpg	" class="card-img-top" alt="Kolhapuri Chicken">
+        <div class="card-body">
+            <h5 class="card-title">Kolhapuri Chicken</h5>
+            <p class="card-text">A fiery and spicy chicken curry from the city of Kolhapur, known for its unique blend of spices.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Dish 6: Aamti -->
+<div class="col-md-4">
+    <div class="card">
+        <img src="static/img/aamti.jpg" class="card-img-top" alt="Aamti">
+        <div class="card-body">
+            <h5 class="card-title">Aamti</h5>
+            <p class="card-text">A tangy lentil curry flavored with goda masala and jaggery. A staple in Maharashtrian households.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+    </div>
+</div>
+    </div>
+    
+</section>
+
+    <!-- Special Offers Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Special Offers</h2>
+            <!-- Content for special offers -->
+            <p class="text-center">Check out our weekly specials and make sure you don't miss out on great deals!</p>
+            <div class="text-center">
+                <a href="#" class="btn btn-warning">View Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>Follow us on social media for more updates!</p>
+            <!-- Social icons -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select all "Order Now" buttons
+        const orderButtons = document.querySelectorAll('.btn-primary');
+
+        // Add click event listener to each button
+        orderButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                // Prevent the default action
+                event.preventDefault();
+                // Show an alert message
+                alert('Thank you for your order! We will prepare your dish shortly.');
+            });
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+   
